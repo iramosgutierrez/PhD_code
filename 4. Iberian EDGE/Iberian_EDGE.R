@@ -147,12 +147,12 @@ plotcontinuous <- function(shp, col, pal=NULL, breaks=10, round=1, ...){
 }#png PD obs
 
 {
-  png(paste0("4. Iberian EDGE/results/1. phylo/PD_", res, "(2).png"), height = 150, width = 150, units = "mm",
+  png(paste0("4. Iberian EDGE/results/1. phylo/PD_", res, ".png"), height = 150, width = 150, units = "mm",
       res=450)
   par(mar=c(.1, .1, .1, .1))
   plotcontinuous(grid, col="pd.obs.mn",    pal="maxent", border="transparent" )#,main="PD OBSERVED",cex=0.75 
-  cent.pd.l <- rgeos::gCentroid(grid[grid@data$pd.pval.mn<0.05,], byid = T)
-  cent.pd.h <- rgeos::gCentroid(grid[grid@data$pd.pval.mn>0.95,], byid = T)
+  cent.pd.l <- rgeos::gCentroid(grid[grid@data$pd.pval.mn<0.025,], byid = T)
+  cent.pd.h <- rgeos::gCentroid(grid[grid@data$pd.pval.mn>0.975,], byid = T)
   plot(cent.pd.l, add=T, pch=4, col="#00000088", cex=log10(as.numeric(res))-0.4)
   plot(cent.pd.h, add=T, pch=16 , col="#00000088", cex=log10(as.numeric(res))-0.4)
   dev.off()
