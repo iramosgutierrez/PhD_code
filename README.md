@@ -1,3 +1,7 @@
+# Doctoral Thesis Document
+
+Document "Thesis_IRamosGutierrez.pdf" is the complete dissertation document. 
+
 # PhD code
 
 Code used for the PhD
@@ -11,3 +15,4 @@ The information regarding chapter 2 (randtip) has not been uploaded here as it c
 Folder "3. Iberian Bioregions" includes the code used to carry out the analyses described in that chapter. The analyses between bioregions and variables are included in an external script, and loaded in the main one (as the results may differe among rus due to stochasticity).
 
 Folder "4. Iberian EDGE" includes code to develop all the methods described in that chapter. Some of the scripts (`Iberian_EDGE_cluster.R`) have been designed to work in a HPC, so running them in a personal computer might not be optimous.
+
