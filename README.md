@@ -1,3 +1,5 @@
+<img src="PIB_phylo_2.png" width="140px" align="right"/>
+
 # Doctoral Thesis Document
 
 Document "Thesis_IRamosGutierrez.pdf" is the complete dissertation document. 
