@@ -1,4 +1,4 @@
-<img src="PIB_phylo_2.png" width="140px" align="right"/>
+<img src="PIB_phylo_2.png" width="200px" align="right"/>
 
 # Doctoral Thesis Document
 
